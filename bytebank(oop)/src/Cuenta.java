@@ -3,7 +3,7 @@ class Cuenta {
   double saldo;
   int agencia;
   int numero;
-  String titular;
+  Cliente titular;
 
   // void depositar(double valor) {
   //   saldo = saldo + valor;
