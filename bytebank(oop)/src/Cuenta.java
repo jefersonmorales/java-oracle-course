@@ -3,7 +3,7 @@ class Cuenta {
   double saldo;
   int agencia;
   int numero;
-  Cliente titular;
+  Cliente titular = new Cliente();
 
   // void depositar(double valor) {
   //   saldo = saldo + valor;
