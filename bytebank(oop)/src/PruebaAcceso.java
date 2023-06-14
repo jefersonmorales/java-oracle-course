@@ -5,7 +5,7 @@ public class PruebaAcceso {
     cuentaJefer.depositar(300);
     cuentaJefer.retirar(200);
 
-    System.out.println(cuentaJefer.obtenerSaldo());
+    System.out.println(cuentaJefer.getSaldo());
   }
   
   

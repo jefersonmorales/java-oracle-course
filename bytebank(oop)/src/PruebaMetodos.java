@@ -5,11 +5,11 @@ public class PruebaMetodos {
     miCuenta.depositar(500);
     miCuenta.depositar(200);
 
-    System.out.println(miCuenta.obtenerSaldo());
+    System.out.println(miCuenta.getSaldo());
 
 
     miCuenta.retirar(300);
-    System.out.println(miCuenta.obtenerSaldo());
+    System.out.println(miCuenta.getSaldo());
     
   }
   
