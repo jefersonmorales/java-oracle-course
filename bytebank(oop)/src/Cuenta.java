@@ -32,5 +32,16 @@ class Cuenta {
 
   }
   
+  public void setAgencia(int nuevaAgencia) {
+    if(nuevaAgencia > 0) {
+      this.agencia = nuevaAgencia;
+    } else {
+      System.out.println("No esta permitido numeros menores a 0");
+    }
+  }
+  
+  public int getAgencia() {
+    return agencia;
+  }
   
 }
