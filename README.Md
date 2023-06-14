@@ -4,3 +4,7 @@ Modificadores de acceso:
   Private => No puede ser usado en otros metodos, ni modificados, nada en lo absoluto. SOLO ES ACCESIBLE CON LA CLASE QUE ESTA TRABAJANDO 
   
   static => para indicar que una variable es de la clase y no de una instancia
+
+  extends => como lo dice es una extension de...
+
+  HERENCIA. Estamos tomando datos de funcionario,  y es cuando hacemos una herencia, pero en este caso el gerente tiene otros metodos diferentes al funcionario normal
