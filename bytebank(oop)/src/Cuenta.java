@@ -5,12 +5,18 @@ class Cuenta {
   int numero;
   private Cliente titular = new Cliente();
 
+  private static int total=0;
+
   public Cuenta(int agencia) {
     if(agencia <= 0) {
       this.agencia = 1;
     } else {
       this.agencia = agencia;
     }
+
+    total++;
+    System.out.println("Se van creando "+total+" cuentas");
+    
   }
 
   void depositar(double valor) { 
