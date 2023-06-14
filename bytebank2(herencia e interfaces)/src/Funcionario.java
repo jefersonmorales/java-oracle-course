@@ -4,6 +4,8 @@ public class Funcionario {
   private String documento;
   private double salario;
 
+  private int tipo;
+
   public Funcionario() {
     
   }
@@ -31,5 +33,26 @@ public class Funcionario {
   public double getSalario() {
     return salario;
   }
+  
+  public double getBonificacion() {
+    if(this.tipo == 0) {
+      return this.salario * 0.1;
+    } else if (this.tipo == 1) {
+      return this.salario * 1;
+    } else {
+      return 0;
+    }
+  }
+
+  public int getTipo() {
+    return tipo;
+  }
+
+  public void setTipo(int tipo) {
+    this.tipo = tipo;
+  }
+
+  
+  
   
 }

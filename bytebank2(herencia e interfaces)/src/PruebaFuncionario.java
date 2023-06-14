@@ -1,14 +1,18 @@
 public class PruebaFuncionario {
 
   public static void main(String[] args) {
-    Funcionario jefer = new Funcionario();
+    Funcionario funcionario = new Funcionario();
 
-    jefer.setNombre("Jeferson Morales");
-    jefer.setDocumento("31334350");
-    jefer.setSalario(555.52);
+    funcionario.setNombre("Jeferson Morales");
+    funcionario.setDocumento("31334350");
+    funcionario.setSalario(200);
+    funcionario.setTipo(0);
 
-    System.out.println("Nombre: "+jefer.getNombre()+" -------------------"+" Documento: " + jefer.getDocumento() + "-----------------------------------" + " Salario: " + jefer.getSalario());
+    // System.out.println("Nombre: "+funcionario.getNombre()+" -------------------"+" Documento: " + funcionario.getDocumento() + "-----------------------------------" + " Salario: " + funcionario.getSalario());
 
+    System.out.println("Su sueldo es: "+funcionario.getSalario()+" -Bonificacion: "+funcionario.getBonificacion()+" -Total: "+(funcionario.getBonificacion()+funcionario.getSalario()));
+    
+    
     
   }
   
