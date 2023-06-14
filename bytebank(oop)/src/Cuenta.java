@@ -1,6 +1,6 @@
 // entidad Cuenta:
 class Cuenta { 
-  double saldo;
+  private double saldo;
   int agencia;
   int numero;
   Cliente titular = new Cliente();
@@ -25,6 +25,11 @@ class Cuenta {
     } else {
       return false;
     }
+  }
+
+  public double obtenerSaldo() {
+    return this.saldo;
+
   }
   
   
