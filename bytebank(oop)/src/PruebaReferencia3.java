@@ -3,15 +3,12 @@ public class PruebaReferencia3 {
   public static void main(String[] args) {
     
     Cuenta cuentaJefer = new Cuenta();
-
-    cuentaJefer.titular = new Cliente(); // esto es una inicializacion
-    cuentaJefer.titular.nombre = "Jeferson";
-
-
-    System.out.println(cuentaJefer.titular.nombre);
+    Cliente clienteJefer = new Cliente();
     
+
+    cuentaJefer.setTitular(clienteJefer); // esto es una inicializacion
+    clienteJefer.setNombre("jeferson morales");
     
+    System.out.println(cuentaJefer.getTitular().getNombre());
   }
-  
-  
 }

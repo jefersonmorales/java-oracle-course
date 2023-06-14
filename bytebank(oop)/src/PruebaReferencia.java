@@ -8,13 +8,13 @@ public class PruebaReferencia {
 
     Cuenta cuentaJefer = new Cuenta();
 
-    cuentaJefer.agencia = 2;
-    cuentaJefer.titular = clienteJefer;
+    cuentaJefer.setAgencia(2);
+    cuentaJefer.setTitular(clienteJefer);
 
-    System.out.println(cuentaJefer.titular.documento); //hacemos referencia al objeto
+    System.out.println(cuentaJefer.getTitular().getDocumento()); //hacemos referencia al objeto
 
 
-    System.out.println(cuentaJefer.titular); //hacemos referencia al id de memoria de clienteJefer
+    System.out.println(cuentaJefer.getTitular()); //hacemos referencia al id de memoria de clienteJefer
     System.out.println(clienteJefer); //hacemos referencia al id de memoria de clienteJefer
     
     

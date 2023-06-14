@@ -1,9 +1,9 @@
 // entidad Cuenta:
 class Cuenta { 
   private double saldo;
-  int agencia;
+  private int agencia;
   int numero;
-  Cliente titular = new Cliente();
+  private Cliente titular = new Cliente();
 
   // void depositar(double valor) {
   //   saldo = saldo + valor;
@@ -29,7 +29,6 @@ class Cuenta {
 
   public double getSaldo() {
     return this.saldo;
-
   }
   
   public void setAgencia(int nuevaAgencia) {
@@ -42,6 +41,14 @@ class Cuenta {
   
   public int getAgencia() {
     return agencia;
+  }
+
+  public void setTitular(Cliente titular) {
+    this.titular = titular;
+  }  
+
+  public Cliente getTitular() {
+    return titular;
   }
   
 }
