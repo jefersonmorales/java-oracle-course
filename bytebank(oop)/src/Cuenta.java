@@ -5,19 +5,18 @@ class Cuenta {
   int numero;
   private Cliente titular = new Cliente();
 
-  // void depositar(double valor) {
-  //   saldo = saldo + valor;
-  // }
+  public Cuenta(int agencia) {
+    if(agencia <= 0) {
+      this.agencia = 1;
+    } else {
+      this.agencia = agencia;
+    }
+  }
 
-  
-  // metodo no retorna valor
-  void depositar(double valor) {
-    // this es una practica usada para hacer referencia al atributo que esta en el objeto
-    
+  void depositar(double valor) { 
     this.saldo = this.saldo + valor;
   }
 
-  // metodo retorna valor
   public boolean retirar(double valor) {
     if(this.saldo >= valor) {
       this.saldo = this.saldo - valor;
@@ -29,14 +28,6 @@ class Cuenta {
 
   public double getSaldo() {
     return this.saldo;
-  }
-  
-  public void setAgencia(int nuevaAgencia) {
-    if(nuevaAgencia > 0) {
-      this.agencia = nuevaAgencia;
-    } else {
-      System.out.println("No esta permitido numeros menores a 0");
-    }
   }
   
   public int getAgencia() {
