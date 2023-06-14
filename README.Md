@@ -8,3 +8,5 @@ Modificadores de acceso:
   extends => como lo dice es una extension de...
 
   HERENCIA. Estamos tomando datos de funcionario,  y es cuando hacemos una herencia, pero en este caso el gerente tiene otros metodos diferentes al funcionario normal
+
+  super => tenemos acceso a atributos de nuestra clase padre.

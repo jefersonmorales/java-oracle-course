@@ -13,4 +13,8 @@ public class Gerente extends Funcionario{
   public boolean iniciarSesion(String clave) {
     return clave == "AluraCurso";
   }
+
+  public double getBonificacion() {
+    return super.getSalario()*1;
+  }
 }
