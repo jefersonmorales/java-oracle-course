@@ -1,4 +1,4 @@
-public class FuncionarioAutenticable {
+public class FuncionarioAutenticable extends Funcionario{
 
   private String clave;
   
@@ -8,6 +8,11 @@ public class FuncionarioAutenticable {
 
   public boolean iniciarSesion(String clave) {
     return clave == "AluraCurso";
+  }
+
+  @Override
+  public double getBonificacion() {
+    return 0;
   }
   
   
