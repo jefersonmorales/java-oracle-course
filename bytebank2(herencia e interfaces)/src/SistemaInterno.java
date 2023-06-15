@@ -2,7 +2,7 @@ public class SistemaInterno {
 
   private String clave = "AluraCurso";
 
-  public boolean autenticar(FuncionarioAutenticable gerente) {
+  public boolean autenticar(Autenticable gerente) {
     boolean puedeIniciarSesion = gerente.iniciarSesion(clave);
 
     if(puedeIniciarSesion) {
