@@ -1,4 +1,7 @@
-public class Funcionario {
+public abstract class Funcionario {
+
+  // abstract nos sirve para hacer que la clase Funcionario no pueda ser instanciada. O sea, nadie puede ser funcionario. Deben ser contador o gerente,etc
+  
 
   private String nombre;
   private String documento;

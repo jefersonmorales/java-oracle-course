@@ -1,7 +1,7 @@
 public class PruebaFuncionario {
 
   public static void main(String[] args) {
-    Funcionario funcionario = new Funcionario();
+    Funcionario funcionario = new Contador();
 
     funcionario.setNombre("Jeferson Morales");
     funcionario.setDocumento("31334350");
