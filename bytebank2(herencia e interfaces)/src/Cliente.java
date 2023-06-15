@@ -1,10 +1,14 @@
 public class Cliente implements Autenticable{
 
-  // NO puede extender de algo que no es una clase. Pero con interfaz puedo implementar algo
+  private String nombre;
+  private String documento;
+  private String telefono;
+
+  private AutenticacionUtil util;
   
-  String nombre;
-  String documento;
-  String telefono;
+  public Cliente() {
+    this.util = new AutenticacionUtil();
+  }
   
   public String getNombre() {
     return nombre;
@@ -32,12 +36,12 @@ public class Cliente implements Autenticable{
 
   @Override
   public boolean iniciarSesion(String clave) {
-    return false;
+      return this.util.iniciarSesion(clave);
   }
 
   @Override
   public void setClave(String clave) {
-    
+    this.setClave(clave);
   } 
   
 }
