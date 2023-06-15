@@ -10,3 +10,5 @@ Modificadores de acceso:
   HERENCIA. Estamos tomando datos de funcionario,  y es cuando hacemos una herencia, pero en este caso el gerente tiene otros metodos diferentes al funcionario normal
 
   super => tenemos acceso a atributos de nuestra clase padre.
+
+  POLIMORFISMO => Podemos hacer referencia a los objetos de nuestra clase padre. referencia a la cualidad por la que un objeto adquiere o puede tener diferentes formas.
