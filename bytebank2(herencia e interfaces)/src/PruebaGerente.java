@@ -9,7 +9,6 @@ public class PruebaGerente {
     gerente.setSalario(600);
     // gerente.setTipo(1);
     
-    System.out.println(gerente.iniciarSesion(gerente.getClave()));
     System.out.println(gerente.getBonificacion());
     
   }
