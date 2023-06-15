@@ -1,11 +1,13 @@
-// entidad Cuenta:
-class Cuenta { 
-  private double saldo;
+public abstract class Cuenta { 
+  
+  protected double saldo; // Lo cambiamos a protected para que pueda ser usado en otras clases
   private int agencia;
   int numero;
   private Cliente titular = new Cliente();
 
   private static int total=0;
+
+
 
   public Cuenta(int agencia) {
     if(agencia <= 0) {
@@ -19,9 +21,7 @@ class Cuenta {
     
   }
 
-  void depositar(double valor) { 
-    this.saldo = this.saldo + valor;
-  }
+  public abstract void depositar(double valor);
 
   public boolean retirar(double valor) {
     if(this.saldo >= valor) {
