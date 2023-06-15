@@ -36,11 +36,8 @@ public abstract class Funcionario {
   public double getSalario() {
     return salario;
   }
-  
-  public double getBonificacion() {
-    System.out.println("EJECUTANDO DESDE FUNCIONARIO");
-    return this.salario * 0.1;
-  }
+
+  public abstract double getBonificacion(); // estamos obligando a que las otras clases sobreescriban este metodo con un cuerpo
 
   public int getTipo() {
     return tipo;
@@ -49,8 +46,4 @@ public abstract class Funcionario {
   public void setTipo(int tipo) {
     this.tipo = tipo;
   }
-
-  
-  
-  
 }
