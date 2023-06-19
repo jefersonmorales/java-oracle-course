@@ -19,13 +19,15 @@ public class Flujo {
       System.out.println(i);
 
       try {
-        int num = 0;
-        int resultado = 20 / num; // Esto es un error porque cualquier numero dividido entre 0 es un error.
-        System.out.println(resultado);
+
+        if (i == 3) {
+          int num = 0;
+          int resultado = 20 / num; // Esto es un error porque cualquier numero dividido entre 0 es un error.
+          System.out.println(resultado);
+        }
 
         String test = null;
         System.out.println(test.toString());
-
 
         // Podemos capturar diferentes errores, haciendo diferentes catch
 
