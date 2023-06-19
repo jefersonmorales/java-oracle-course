@@ -11,6 +11,4 @@ public class TestSistemaInterno {
     sistema.autenticar(admin);
     
   }
-  
-  
 }

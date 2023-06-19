@@ -1,13 +1,10 @@
 public abstract class Funcionario {
 
   // abstract nos sirve para hacer que la clase Funcionario no pueda ser instanciada. O sea, nadie puede ser funcionario. Deben ser contador o gerente,etc
-  
 
   private String nombre;
   private String documento;
   private double salario;
-
-  private int tipo;
 
   public Funcionario() {
     
@@ -38,12 +35,4 @@ public abstract class Funcionario {
   }
 
   public abstract double getBonificacion(); // estamos obligando a que las otras clases sobreescriban este metodo con un cuerpo
-
-  public int getTipo() {
-    return tipo;
-  }
-
-  public void setTipo(int tipo) {
-    this.tipo = tipo;
-  }
 }

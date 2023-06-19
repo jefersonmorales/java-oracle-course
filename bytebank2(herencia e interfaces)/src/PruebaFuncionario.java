@@ -6,7 +6,6 @@ public class PruebaFuncionario {
     funcionario.setNombre("Jeferson Morales");
     funcionario.setDocumento("31334350");
     funcionario.setSalario(200);
-    funcionario.setTipo(0);
 
     // System.out.println("Nombre: "+funcionario.getNombre()+" -------------------"+" Documento: " + funcionario.getDocumento() + "-----------------------------------" + " Salario: " + funcionario.getSalario());
 
