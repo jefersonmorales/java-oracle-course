@@ -7,9 +7,9 @@ public class CuentaCorriente extends Cuenta {
   }
 
   @Override
-  public boolean retirar(double valor) {
+  public void retirar(double valor) {
     double comision = 2;
-    return super.retirar(valor+comision);
+    super.retirar(valor+comision);
   }
 
   @Override
