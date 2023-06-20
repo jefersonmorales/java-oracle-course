@@ -1,15 +1,29 @@
 public class TestConexion {
 
-  public static void main(String[] args) {
-    Conexion con = new Conexion();
-
-    try {
-      con.leerDatos();
-    } catch (Exception e) {
+  public static void main(String[] args) throws Exception {
+    
+    /* 
+    try (Conexion conexion = new Conexion()) {
+      conexion.leerDatos();
+    } catch (IllegalStateException e) {
+      System.out.println("Ejecutando catch");
       e.printStackTrace();
+    }*/
+
+    Conexion conexion = null;
+    
+    try {
+      conexion = new Conexion();
+      conexion.leerDatos();
+    } catch (IllegalStateException ex) {
+      ex.printStackTrace();
     } finally {
-      con.cerrar();
+      System.out.println("Ejecutando finally");
+      if (conexion != null) {
+        conexion.cerrar();
+      }
     }
+    
   }
   
 }
