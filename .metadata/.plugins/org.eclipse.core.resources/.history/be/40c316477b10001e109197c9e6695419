@@ -1,0 +1,14 @@
+/modelo/
+/Administrador.class
+/Autenticable.class
+/AutenticacionUtil.class
+/Cliente.class
+/Contador.class
+/ControlBonificacion.class
+/Cuenta.class
+/CuentaAhorros.class
+/CuentaCorriente.class
+/Funcionario.class
+/Gerente.class
+/SaldoInsuficienteException.class
+/SistemaInterno.class
