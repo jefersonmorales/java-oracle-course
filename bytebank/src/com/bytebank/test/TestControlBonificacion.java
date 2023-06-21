@@ -1,6 +1,13 @@
 package com.bytebank.test;
 
+// importar todo el paquete 
 import com.bytebank.modelo.*;
+
+// importar elemento por elemento
+import com.bytebank.modelo.ControlBonificacion;
+import com.bytebank.modelo.Funcionario;
+import com.bytebank.modelo.Gerente;
+import com.bytebank.modelo.Contador;
 
 public class TestControlBonificacion {
 
