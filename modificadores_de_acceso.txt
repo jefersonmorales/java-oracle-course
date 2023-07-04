@@ -1,0 +1,4 @@
+--public = accesible desde cualquier parte
+--default = accesible dentro del paquete
+--protected = accesible dentro del paquete y clases hijas
+--private = accesible solo desde la misma clase 
