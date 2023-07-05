@@ -8,7 +8,7 @@ public class TestGerente {
 		Gerente gerente = new Gerente();
 	    // Funcionario gerente = new Funcionario();
 
-	    gerente.setClave("jefer");
+	    // gerente.setClave("jefer");
 	    
 	    gerente.setSalario(600);
 	    // gerente.setTipo(1);
