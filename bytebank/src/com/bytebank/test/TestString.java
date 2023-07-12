@@ -1,4 +1,7 @@
-package com.bytebank.modelo;
+package com.bytebank.test;
+
+import com.bytebank.modelo.Cuenta;
+import com.bytebank.modelo.CuentaAhorros;
 
 public class TestString {
 	
@@ -25,14 +28,18 @@ public class TestString {
 		int index = nombre.indexOf("o");
 		System.out.println("Indice de la letra o: " + index);
 		
+		CuentaAhorros cuentatest = new CuentaAhorros(100);
+		
 		printLine(nombre);
 		printLine(letra);
 		printLine(index);
-		
-		Object cuenta = new CuentaAhorros(200);
-		
+		printLine(cuentatest);
+		printLine(new CuentaAhorros(500));
 	}
 	
+	public static void printLine(Object value) {
+		System.out.println(value.toString());
+	}
 	
 	/**
 	 * Esto es una sobre carga, ya que debimos crear un printLine por cada tipo de dato y soporte nombre, letra e index.
@@ -51,8 +58,5 @@ public class TestString {
 	 * Para evitar lo anterior podemos usar Object ya que todo en java es un objeto y es la clase padre. Con este tipo, soportaria todo tipo de dato
 	 * @param value
 	 */
-	public static void printLine(Object value) {
-		System.out.println(value);
-	}
 
 }
