@@ -12,6 +12,15 @@ public class TestMain {
 
         int indice = 3;
         
+        
+        int longitudArrays = edades.length;
+
         System.out.println("Indice: " + indice + ". Valor: " + edades[indice]);
+        System.out.println("Longitud del Array de edades: " + longitudArrays);
+
+        for (int i = 0; i < edades.length; i++) {
+            System.out.println("Metodo for. Indice: " + i + ", Valor: " + edades[i]);
+        }
+
     }
 }
