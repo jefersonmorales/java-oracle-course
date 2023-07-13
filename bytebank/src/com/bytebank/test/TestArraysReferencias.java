@@ -1,26 +1,24 @@
 package com.bytebank.test;
 
+import com.bytebank.modelo.Cuenta;
 import com.bytebank.modelo.CuentaAhorros;
 import com.bytebank.modelo.CuentaCorriente;
 
 public class TestArraysReferencias {
     public static void main(String[] args) {
 
-        CuentaCorriente cc = new CuentaCorriente(300);
+        CuentaAhorros cuentaAhorros1 = new CuentaAhorros(300); // instancia de una cuenta de ahorros # 1
 
-        CuentaCorriente[] cuentas = new CuentaCorriente[5];
-        cuentas[1] = cc;
+        Cuenta[] cuentas = new Cuenta[5]; // creacion de array
+        cuentas[1] = cuentaAhorros1; // agregando referencia en array
 
-        // System.out.println("Clase cuenta. " + cc);
-        // System.out.println("Array. " + cuentas[1]);
+        CuentaAhorros cuentaAhorros2 = new CuentaAhorros(1300); // instancia de una cuenta ahorros # 2
+        cuentas[3] = cuentaAhorros2; // agregando referencia en array
 
-        cuentas[0] = new CuentaCorriente(100);
-        // System.out.println("Array. " + cuentas[0]);
-
-        // System.out.println("Array. Posicion vacia (ejemplo): " + cuentas[3]);
+        cuentas[0] = new CuentaCorriente(100); // instancia de una cuenta corriente y agregando al array
 
         for (int i = 0; i < cuentas.length; i++) {
-            System.out.println("Indice # : " + i + ", Valor: " +  cuentas[i]);
+            System.out.println("Indice # : " + i + ", Valor: " + cuentas[i]);
         }
 
     }
