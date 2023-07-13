@@ -1,0 +1,2 @@
+Cast (castear)
+Sirve para indicar a java que los objetos son del tipo que nosotros le indicamos entre parentesis
