@@ -1,6 +1,5 @@
 package com.bytebank.test;
 
-import com.bytebank.modelo.Cliente;
 import com.bytebank.modelo.Cuenta;
 import com.bytebank.modelo.CuentaCorriente;
 import com.bytebank.modelo.CuentaAhorros;
@@ -13,9 +12,11 @@ public class TestArrayList {
     // <> (Generics) Forzando a que solo acepte solo un tipo de objeto
     ArrayList<Cuenta> lista = new ArrayList<>();
     Cuenta cc = new CuentaCorriente(1122);
+    Cuenta cc2 = new CuentaAhorros(1122);
     Cuenta ca = new CuentaAhorros(12321);
 
     lista.add(cc);
+    lista.add(cc2);
     lista.add(ca);
 
     // ya no es necesario castear porque ya estamos indicando que va a usar Cuenta
@@ -33,6 +34,25 @@ public class TestArrayList {
     for (Cuenta cuenta : lista) {
       System.out.println(cuenta);
     }
+
+    boolean contiene = lista.contains(cc2);
+
+    // referencia
+
+    if (contiene) {
+      System.out.println("Si son iguales(equals)");
+    }
+
+    // if (contiene) {
+    // System.out.println("Si contiene una referencia con este nombre");
+    // }
+
+    // valores
+    // if (cc.esIgual(cc2)) {
+    // System.out.println("Si existe una referencia con los mismos valores");
+    // }
+
+    // metodo equals
 
   }
 }
