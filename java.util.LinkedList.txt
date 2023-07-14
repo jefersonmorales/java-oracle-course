@@ -1,0 +1,4 @@
+Es una lista de objetos y no un array (lista anexada)
+
+Ventajas:
+-realizar operaciones para remover o insertar elementos segun el orden sin necesidad de recorrer el array. 
