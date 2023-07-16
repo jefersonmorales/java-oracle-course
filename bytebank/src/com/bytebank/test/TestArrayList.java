@@ -1,13 +1,62 @@
 package com.bytebank.test;
 
+import com.bytebank.modelo.Cliente;
 import com.bytebank.modelo.Cuenta;
 import com.bytebank.modelo.CuentaCorriente;
 import com.bytebank.modelo.CuentaAhorros;
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class TestArrayList {
 
   public static void main(String[] args) {
+    // usando interface List
+
+    List<Cuenta> listaCuentas = new LinkedList<>();
+    Cuenta cLinkedList = new CuentaAhorros(100);
+    listaCuentas.add(cLinkedList);
+    Cuenta cLinkedList2 = new CuentaAhorros(200);
+    listaCuentas.add(cLinkedList2);
+    Cuenta cLinkedList3 = new CuentaAhorros(300);
+    listaCuentas.add(cLinkedList3);
+
+    System.out.println("");
+    System.out.println("========= INICIO =========");
+    System.out.println("");
+    System.out.println("LINKED LIST : ");
+    System.out.println("");
+
+    for (int i = 0; i < listaCuentas.size(); i++) {
+      System.out.println("for index #" + i + " : - " + listaCuentas.get(i));
+    }
+
+    System.out.println("");
+    System.out.println("========= FIN =========");
+    System.out.println("");
+    System.out.println("");
+
+    List<Cuenta> listaCuentas2 = new ArrayList<>();
+    Cuenta cuenta1 = new CuentaAhorros(1000);
+    listaCuentas2.add(cuenta1);
+
+    Cuenta cuenta2 = new CuentaAhorros(2000);
+    listaCuentas2.add(cuenta2);
+
+    System.out.println("");
+    System.out.println("========= INICIO =========");
+    System.out.println("");
+    System.out.println("ARRAY LIST : ");
+    System.out.println("");
+
+    for (int i = 0; i < listaCuentas2.size(); i++) {
+      System.out.println("for index #" + i + " : - " + listaCuentas2.get(i));
+    }
+
+    System.out.println("");
+    System.out.println("========= FIN =========");
+    System.out.println("");
+    System.out.println("");
 
     // <> (Generics) Forzando a que solo acepte solo un tipo de objeto
     ArrayList<Cuenta> lista = new ArrayList<>();
